@@ -1,0 +1,43 @@
+.backgroundFon{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.whiteBox{
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+    height: 70%;
+    width: 25%;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+
+.itemBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #e64444;*/
+    width: 100%;
+    height: 90px;
+}
+
+.title{
+    font-size: 30px;
+    color: #333333;
+}
+.myForm,
+.myButton{
+    width: 100%;
+}
+
+.myButton{
+    background: rgb(2,0,36);
+    background: linear-gradient(157deg, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
