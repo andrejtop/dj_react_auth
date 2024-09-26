@@ -18,8 +18,8 @@ const drawerWidth = 240;
 
 export default function Navbar(props) {
   const {content} = props
-    const location = useLocation();//узнаем текущую страницу
-    const path = location.pathname;//получаем путь к текущей странице
+  const location = useLocation();//узнаем текущую страницу
+  const path = location.pathname;//получаем путь к текущей странице
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />

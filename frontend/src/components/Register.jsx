@@ -5,12 +5,12 @@ import MyPassField from "./Forms/myPassField.jsx";
 import MyButton from "./Forms/myButton.jsx";
 import {Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import AxiosInstance from "./AxiosInstance.jsx";
+import AxiosInstance from "./AxiosInstance";
 import {useNavigate} from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
-  const {handleSubmit, control} = useForm();
+  const {control, handleSubmit} = useForm();
   const submission = (data) => {
     AxiosInstance.post(
       "register/",{
@@ -23,7 +23,7 @@ const Register = () => {
   }
   return (
         <div className={"backgroundFon"}>
-          <form onSubmit={handleSubmit(submission)}>
+            <form onSubmit={handleSubmit(submission)}>
             <Box className={"whiteBox"}>
               <Box className={"itemBox"}>
                 <Box className={"title"}>
@@ -48,7 +48,7 @@ const Register = () => {
                 </Link>
               </Box>
             </Box>
-          </form>
+            </form>
         </div>
     )
 }
